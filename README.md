@@ -1,3 +1,3 @@
-# k8_setup
+# k8_specs
 
-# Post install yaml files for new k8 clusters
+# Various specs for use with kubernetes
