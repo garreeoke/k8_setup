@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: frisk-api
+  name: frisk-api
+spec:
+  ports:
+    - name: http-port
+      port: 8080
+      protocol: TCP
+  selector:
+    app: frisk-api
+  sessionAffinity: None
+  type: LoadBalancer
