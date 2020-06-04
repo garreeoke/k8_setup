@@ -1,14 +1,9 @@
 apiVersion: kots.io/v1beta1
 kind: Application
 metadata:
-  name: app-slug
+  name: Frisk
 spec:
-  title: App Name
-  icon: https://github.com/cncf/artwork/blob/master/projects/kubernetes/icon/color/kubernetes-icon-color.png
+  title: Frisk
+  icon: https://github.com/garreeoke/k8_specs/blob/master/frisk/flogo.jpg
   statusInformers:
-    - deployment/example-nginx
-  ports:
-    - serviceName: "example-nginx"
-      servicePort: 80
-      localPort: 8888
-      applicationUrl: "http://example-nginx"
+    - deployment/frisk-api
